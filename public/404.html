@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        
+body {
+  font-family: 'Arvo', serif;
+  background: #0F1624;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 90vh;
+  transition: 1s;
+}
+.error {
+  color: #00ffaa;
+  box-shadow: 0 5px 0px -2px #20293F;
+  text-align: center;
+  animation: fadein 1.2s ease-in;
+}
+.error > .code {
+  font-size: 10.5em;
+  text-shadow:  0 6px 1px rgba(0,0,0,0.0980392) , 0 0 5px rgba(0,0,0,0.0980392) , 0 1px 3px rgba(0,0,0,0.298039) , 0 3px 5px rgba(0,0,0,0.2) , 0 5px 10px rgba(0,0,0,0.247059) , 0 10px 10px rgba(0,0,0,0.2) , 0 20px 20px rgba(0,0,0,0.14902) ;
+  margin: 0;
+}
+.error > .desc {
+  text-shadow: 0px 3px 5px rgba(0,0,0,0.5), 0px 6px 20px rgba(0,0,0,0.3);
+  font-weight: 400;
+}
+@keyframes fadein {
+  0% {
+    margin-top: -50px;
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+footer {
+  position: absolute;
+  bottom: 25%;
+}
+.go-home a{
+  font-family:  'Rubik', Arial Black, Sans-Serif;
+  font-size: 1rem;
+  color:#0F1624;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-decoration: none;
+  
+}
+
+.go-home{
+  background: #00ffaa;
+  border:none;
+  padding: 25px 30px;
+  margin: 30px 0;
+  border-radius: 5px;
+  cursor: pointer;
+}
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 Not Found</title>
+
+</head>
+<body>
+    <div class='error'>
+        <h1 class='code'>404</h1>
+        <h2 class='desc'>Ops... There's something wrong.</h2>
+      </div>
+      <footer>
+        <button class="go-home"><a href="https://greazey.tk">
+            home page</a>
+          </button>
+      </footer>
+</body>
+</html>
