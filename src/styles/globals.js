@@ -77,12 +77,19 @@ body::-webkit-scrollbar-thumb
   text-transform: uppercase;
 }
 
+.name-div{
+  display:inline-block;
+  position :relative;
+  overflow:hidden;
+  width:max-content;
+  
+}
+
 .name::before {
   content: attr(data-text);
 
   position: absolute;
-  width: 100%;
-
+width:101%;
   color: #00ffaa;
   -webkit-text-stroke: 0vw #383d52;
   border-right: 3px solid #00ffaa;
@@ -96,7 +103,7 @@ body::-webkit-scrollbar-thumb
   }
   70%,
   100% {
-    width: 100%;
+    width: 101%;
   }
  
 
