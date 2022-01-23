@@ -79,7 +79,7 @@ const [contactStatus,setContactStatus] = useState('closed')
         <SocialIcons style={{ marginTop: "-20px" }} href="https://github.com/GreaZey" target="_blank">
           <AiFillGithub size="3rem" />
         </SocialIcons>
-        <SocialIcons style={{ marginTop: "-20px" }} href="https://www.linkedin.com/greazey " target="_blank">
+        <SocialIcons style={{ marginTop: "-20px" }} href="https://www.linkedin.com/in/greazey " target="_blank">
           <AiFillLinkedin size="3rem" />
         </SocialIcons>
         <SocialIcons style={{ marginTop: "-20px" }} href="https://codepen.io/greazey" target="_blank">
