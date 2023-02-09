@@ -15,17 +15,17 @@ const GlobalStyles = createGlobalStyle`
 
   }
   body {
-    font-family: ${props => props.theme.fonts.main};
+    font-family: ${(props) => props.theme.fonts.main};
     font-size: 1.6rem;
-    background: ${props => props.theme.colors.background1};
-    color: ${props => props.theme.colors.primary1};   
+    background: ${(props) => props.theme.colors.background1};
+    color: ${(props) => props.theme.colors.primary1};   
     cursor: default;
     overflow-x:hidden;
     // overflow-y:hidden;
 
   }
   h1,h2,h3,h4,h5,h6,button {
-    font-family: ${props => props.theme.fonts.title};
+    font-family: ${(props) => props.theme.fonts.title};
   }
   a {
     text-decoration: none;
@@ -45,17 +45,21 @@ const GlobalStyles = createGlobalStyle`
 body::after {
   content: "";
   position: absolute;
-  top: -25vw;
-  left: -25vw;
-  height: 50vw;
-  width: 50vw;
-  background: linear-gradient(250deg, #13acc77a, #b05dd650);
+  top: -50rem;
+  left: -50rem;
+  width: 100rem;
+  aspect-ratio:1;
   background: #0f162400;
   transition: .5s ease;
   box-shadow: 20px 20px 50px rgba(0,0,0,0.5);
   backdrop-filter: blur(5px);
   border-radius: 50%;  
   z-index: -1;
+  animation : 2s grow cubic-bezier(0.65, 0.05, 0.36, 1);;
+}
+@keyframes grow {
+  from {width: 0;}
+  to {width: 100rem;}
 }
 body::-webkit-scrollbar
 {
@@ -71,10 +75,6 @@ body::-webkit-scrollbar-thumb
 .nameSection {
   margin-top: 250px;
   margin-bottom: 360px;
-}
-.name {
-  color: #0f1624;
-  text-transform: uppercase;
 }
 
 .name-div{
